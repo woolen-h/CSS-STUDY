@@ -1,0 +1,72 @@
+html {
+  font-family: "Chronicle Text G1", serif;
+  width: 100%;
+}
+html img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body {
+  background-color: #f4f4f4;
+}
+html body.main .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+html body.main .head .logo {
+  font-size: 32px;
+  width: 120px;
+  height: 50px;
+}
+html body.main .head .menu {
+  display: flex;
+}
+html body.main .head .menu li {
+  padding: 16px;
+}
+html body.main .page {
+  padding: 0 40px;
+}
+html body.main .page .row {
+  display: flex;
+}
+html body.main .page .home-img {
+  width: 70%;
+  margin-bottom: 40px;
+}
+html body.main .page .m-list {
+  width: 30%;
+  font-size: 26px;
+  text-align: right;
+}
+html body.main .page .m-list ul {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+html body.main .page .m-list ul li {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+html body.main .page .m-list ul li:first-child {
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-right: -1px;
+  font-family: "Verlag", sans-serif;
+}
+html body.main .page .m-list ul li:not(:first-child) {
+  letter-spacing: 7px;
+  margin-right: -7px;
+}
+html body.main .page .m-list ul li.store {
+  margin-top: 40px;
+}
+html body.main .page .portrait {
+  width: 25%;
+}
+html body.main .page .landscape {
+  width: 75%;
+}/*# sourceMappingURL=common.css.map */
