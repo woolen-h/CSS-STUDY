@@ -1,47 +1,129 @@
 html {
-  font-family: "Chronicle Text G1", serif;
   width: 100%;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  
 
   body {
     background-color: #f4f4f4;
 
     &.main {
+
       .head {
         display: flex;
         justify-content: space-between;
-        padding: 20px 40px;
+        padding: 30px 80px;
 
         .logo {
           font-size: 32px;
           width: 120px;
           height: 50px;
-        }
 
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
         .menu {
           display: flex;
 
           li {
-            padding: 16px;
+            width: 100%;
+          }
+          .accountIcon {
+            cursor: pointer;
+
+            a {
+              display: block;
+              background-image: url("/src/img/account.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 14px 14px;
+              width: 40px;
+              height: 50px;
+            }
+          }
+          .searchIcon {
+            cursor: pointer;
+
+            a {
+              display: block;
+              background-image: url("/src/img/searchIcon.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 14px 14px;
+              width: 40px;
+              height: 50px;
+            }
+          }
+          .menuIcon {
+            cursor: pointer;
+
+            a {
+              display: block;
+              background-image: url("/src/img/mMenu.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 17px 17px;
+              width: 40px;
+              height: 50px;
+            }
           }
         }
       }
 
       .page {
-        padding: 0 40px;
-
+        margin: 0 80px;
+        .land {
+          display: flex;
+        }
         .row {
           display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          justify-content: space-between;
+          gap: 80px;
+
+          .portrait {
+            width: calc(40% - 40px);
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .landscape {
+            width: calc(60% - 40px);
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .landscape-02 {
+            width: calc(50% - 22px);
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .portrait-02 {
+            width: calc(25% - 22px);
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
         }
 
         .home-img {
           width: 70%;
-          margin-bottom: 40px;
+          margin-bottom: 80px;
         }
         .m-list {
           width: 30%;
@@ -66,6 +148,7 @@ html {
               &:not(:first-child) {
                 letter-spacing: 7px;
                 margin-right: -7px;
+                font-family: 'Chronicle Text G1', serif;
               }
               &.store {
                 margin-top: 40px;
@@ -73,13 +156,10 @@ html {
             }
           }
         }
-        .portrait {
-          width: 25%;
-        }
-        .landscape {
-          width: 75%;
-        }
       }
     }
   }
+}
+.blind {
+  visibility: hidden;
 }
