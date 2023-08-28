@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Chronicle Text G1";
+  src: url("../fonts/Chronicle-Text-G1-Roman.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Chronicle Display";
+  src: url("../fonts/Chronicle-Display-Roman.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Verlag";
+  src: url("../fonts/Verlag-Book.otf") format("opentype");
+  font-weight: normal;
+}/*# sourceMappingURL=font.css.map */

@@ -1,12 +1,5 @@
 html {
-  font-family: "Chronicle Text G1", serif;
   width: 100%;
-}
-html img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 html body {
   background-color: #f4f4f4;
@@ -14,28 +7,115 @@ html body {
 html body.main .head {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 30px 80px;
 }
 html body.main .head .logo {
   font-size: 32px;
   width: 120px;
   height: 50px;
 }
+html body.main .head .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 html body.main .head .menu {
   display: flex;
 }
 html body.main .head .menu li {
-  padding: 16px;
+  width: 100%;
+}
+html body.main .head .menu .accountIcon {
+  cursor: pointer;
+}
+html body.main .head .menu .accountIcon a {
+  display: block;
+  background-image: url("/src/img/account.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  width: 40px;
+  height: 50px;
+}
+html body.main .head .menu .searchIcon {
+  cursor: pointer;
+}
+html body.main .head .menu .searchIcon a {
+  display: block;
+  background-image: url("/src/img/searchIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  width: 40px;
+  height: 50px;
+}
+html body.main .head .menu .menuIcon {
+  cursor: pointer;
+}
+html body.main .head .menu .menuIcon a {
+  display: block;
+  background-image: url("/src/img/mMenu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  width: 40px;
+  height: 50px;
 }
 html body.main .page {
-  padding: 0 40px;
+  margin: 0 80px;
+}
+html body.main .page .land {
+  display: flex;
 }
 html body.main .page .row {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  gap: 80px;
+}
+html body.main .page .row .portrait {
+  width: calc(40% - 40px);
+}
+html body.main .page .row .portrait img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body.main .page .row .landscape {
+  width: calc(60% - 40px);
+}
+html body.main .page .row .landscape img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body.main .page .row .landscape-02 {
+  width: calc(50% - 22px);
+}
+html body.main .page .row .landscape-02 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body.main .page .row .portrait-02 {
+  width: calc(25% - 22px);
+}
+html body.main .page .row .portrait-02 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body.main .page .home-img {
   width: 70%;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 html body.main .page .m-list {
   width: 30%;
@@ -60,13 +140,12 @@ html body.main .page .m-list ul li:first-child {
 html body.main .page .m-list ul li:not(:first-child) {
   letter-spacing: 7px;
   margin-right: -7px;
+  font-family: "Chronicle Text G1", serif;
 }
 html body.main .page .m-list ul li.store {
   margin-top: 40px;
 }
-html body.main .page .portrait {
-  width: 25%;
-}
-html body.main .page .landscape {
-  width: 75%;
+
+.blind {
+  visibility: hidden;
 }/*# sourceMappingURL=common.css.map */
