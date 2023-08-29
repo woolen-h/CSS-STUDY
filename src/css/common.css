@@ -1,5 +1,7 @@
 html {
   width: 100%;
+  font-family: "Chronicle Text G1";
+  overflow-x: hidden;
 }
 html body {
   background-color: #f4f4f4;
@@ -7,7 +9,7 @@ html body {
 html body.main .head {
   display: flex;
   justify-content: space-between;
-  padding: 30px 80px;
+  padding: 30px 70px 30px 80px;
 }
 html body.main .head .logo {
   font-size: 32px;
@@ -67,8 +69,9 @@ html body.main .page {
 }
 html body.main .page .land {
   display: flex;
+  justify-content: space-between;
 }
-html body.main .page .row {
+html body.main .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -76,76 +79,348 @@ html body.main .page .row {
   margin: 0;
   justify-content: space-between;
   gap: 80px;
+  padding-bottom: 80px;
 }
-html body.main .page .row .portrait {
+html body.main .portrait {
   width: calc(40% - 40px);
 }
-html body.main .page .row .portrait img {
+html body.main .portrait img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html body.main .page .row .landscape {
+html body.main .landscape {
   width: calc(60% - 40px);
 }
-html body.main .page .row .landscape img {
+html body.main .landscape img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html body.main .page .row .landscape-02 {
-  width: calc(50% - 22px);
+html body.main .landscape-02 {
+  width: calc(50% - 60px);
 }
-html body.main .page .row .landscape-02 img {
+html body.main .landscape-02 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html body.main .page .row .portrait-02 {
-  width: calc(25% - 22px);
+html body.main .portrait-02 {
+  width: calc(25% - 60px);
 }
-html body.main .page .row .portrait-02 img {
+html body.main .portrait-02 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html body.main .page .home-img {
-  width: 70%;
+html body.main .portrait-03 {
+  width: calc(33.33% - 60px);
+}
+html body.main .portrait-03 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body.main .article-Block {
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+html body.main .article-Block span {
+  color: gray;
+}
+html body.main .article-Block span:hover {
+  transition: 0.4s all ease-in-out;
+  color: #000;
+}
+html body.main .article-Block .art-title {
+  font-size: 8px;
+  font-family: "verlag";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+html body.main .article-Block .art-m-title {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  font-family: "Chronicle Text G1";
+  letter-spacing: 1px;
+}
+html body.main .thumbnail {
+  height: 700px;
+}
+html body.main .home-img {
+  width: 1200px;
+  height: 700px;
   margin-bottom: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Home-1250x833.jpg");
+  background-position: center;
+  transition: background-image 0.2s ease-in-out;
 }
-html body.main .page .m-list {
+html body.main .home-img .img-caption {
+  position: relative;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+html body.main .home-img span {
+  position: absolute;
+  left: 1210px;
+  writing-mode: vertical-lr;
+}
+html body.main .m-list {
   width: 30%;
   font-size: 26px;
   text-align: right;
 }
-html body.main .page .m-list ul {
+html body.main .m-list ul {
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-html body.main .page .m-list ul li {
+html body.main .m-list ul li {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-html body.main .page .m-list ul li:first-child {
+html body.main .m-list ul li:first-child {
   margin-top: 5px;
   font-size: 10px;
   letter-spacing: 1px;
   margin-right: -1px;
   font-family: "Verlag", sans-serif;
 }
-html body.main .page .m-list ul li:not(:first-child) {
+html body.main .m-list ul li:not(:first-child) {
   letter-spacing: 7px;
   margin-right: -7px;
   font-family: "Chronicle Text G1", serif;
 }
-html body.main .page .m-list ul li.store {
+html body.main .m-list ul li.store {
   margin-top: 40px;
+}
+html body.main h5 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 11px;
+}
+html body .feature {
+  width: 100%;
+  background-color: #bdbebf;
+  padding: 60px 10px;
 }
 
 .blind {
   visibility: hidden;
+}
+
+.feature-block {
+  font-family: "Chronicle Text G1";
+  margin-top: 30%;
+  margin-right: -120px;
+  text-align: center;
+}
+.feature-block h1 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 1em;
+}
+.feature-block p {
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.feature-block button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #000;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.feature-block button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.feature-product {
+  color: gray;
+  font-size: 8px;
+}
+.feature-product .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-product .menu h6 {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.feature-product .menu p {
+  color: gray;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.feature-product .menu .p1 {
+  margin-top: 8px;
+  font-family: "Verlag";
+}
+
+footer {
+  background-color: #4d4d4d;
+}
+footer .info {
+  display: flex;
+  padding: 100px 80px;
+}
+footer .info .text {
+  color: gray;
+  flex: 1;
+  line-height: 1.6;
+  padding-right: 10%;
+}
+footer .info .text .company {
+  margin-top: 20px;
+}
+footer .info .text .company span {
+  margin-right: 7px;
+}
+footer .info .text .company svg {
+  width: 60px;
+  max-height: 12px;
+}
+footer .info .menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+footer .info .menu ul {
+  display: inline-block;
+}
+footer .info .menu ul li {
+  font-size: 12px;
+  line-height: 2;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+footer .info .menu ul li:first-child {
+  cursor: default;
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Verlag";
+}
+footer .info .menu ul li:not(:first-child) {
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+footer .info .menu ul li:not(:first-child):hover {
+  color: gray;
+}
+footer .info .subscribe {
+  flex: 1;
+  text-align: right;
+  font-size: 11px;
+  color: gray;
+}
+footer .info .subscribe form h6 {
+  text-transform: uppercase;
+  font-family: "Verlag";
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+footer .info .subscribe form input {
+  background-color: transparent;
+}
+footer .info .subscribe form input[type=email] {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 140px;
+}
+footer .info .subscribe form input[type=submit] {
+  cursor: pointer;
+  position: relative;
+  bottom: -14px;
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  background-image: url("/src/img/arrowRight.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+footer .info .subscribe .icon a {
+  display: inline-block;
+  width: 30px;
+}
+footer .info .subscribe .icon a svg {
+  fill: gray;
+  transition: all 0.3s ease-in-out;
+}
+footer .info .subscribe .icon a svg:hover {
+  fill: #fff;
+}
+footer .fixed-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #ccc6bb;
+}
+footer .fixed-bar .wrapper {
+  display: flex;
+  padding: 30px;
+}
+footer .fixed-bar .wrapper .content {
+  flex: 9;
+  text-align: center;
+  font-size: 13px;
+}
+footer .fixed-bar .wrapper .content span {
+  padding-right: 30px;
+}
+footer .fixed-bar .wrapper .content input {
+  background-color: transparent;
+  border: none;
+}
+footer .fixed-bar .wrapper .content input[type=email] {
+  border-bottom: 1px solid gray;
+  width: 300px;
+  padding: 10px;
+  font-family: "Chronicle Text G1";
+}
+footer .fixed-bar .wrapper .content input[type=submit] {
+  cursor: pointer;
+  margin-left: -40px;
+  width: 30px;
+  height: 30px;
+  font-family: "Verlag";
+}
+footer .fixed-bar .wrapper .close {
+  flex: 1;
+  margin-right: 40px;
+}
+footer .fixed-bar .wrapper .close button {
+  color: gray;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-family: "Verlag";
+  letter-spacing: 2px;
+  cursor: pointer;
 }/*# sourceMappingURL=common.css.map */
