@@ -1,165 +1,451 @@
 html {
-  width: 100%;
-  
+    width: 100%;
+    font-family: "Chronicle Text G1";
+    overflow-x: hidden;
 
-  body {
-    background-color: #f4f4f4;
+    body {
+        background-color: #f4f4f4;
 
-    &.main {
+        &.main {
+            .head {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 70px 30px 80px;
 
-      .head {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 80px;
+                .logo {
+                    font-size: 32px;
+                    width: 120px;
+                    height: 50px;
 
-        .logo {
-          font-size: 32px;
-          width: 120px;
-          height: 50px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .menu {
+                    display: flex;
 
-          img {
+                    li {
+                        width: 100%;
+                    }
+                    .accountIcon {
+                        cursor: pointer;
+
+                        a {
+                            display: block;
+                            background-image: url("/src/img/account.svg");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 14px 14px;
+                            width: 40px;
+                            height: 50px;
+                        }
+                    }
+                    .searchIcon {
+                        cursor: pointer;
+
+                        a {
+                            display: block;
+                            background-image: url("/src/img/searchIcon.svg");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 14px 14px;
+                            width: 40px;
+                            height: 50px;
+                        }
+                    }
+                    .menuIcon {
+                        cursor: pointer;
+
+                        a {
+                            display: block;
+                            background-image: url("/src/img/mMenu.svg");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 17px 17px;
+                            width: 40px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+
+            .page {
+                margin: 0 80px;
+
+                .land {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                justify-content: space-between;
+                gap: 80px;
+                padding-bottom: 80px;
+            }
+
+            .portrait {
+                width: calc(40% - 40px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .landscape {
+                width: calc(60% - 40px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .landscape-02 {
+                width: calc(50% - 60px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .portrait-02 {
+                width: calc(25% - 60px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .portrait-03 {
+                width: calc(33.33% - 60px);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .article-Block {
+                font-size: 12px;
+                margin-top: 10px;
+                line-height: 1.6;
+
+                span {
+                    color: gray;
+                    &:hover {
+                        transition: 0.4s all ease-in-out;
+                        color: #000;
+                    }
+                }
+                .art-title {
+                    font-size: 8px;
+                    font-family: "verlag";
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+                .art-m-title {
+                    display: inline-block;
+                    padding-top: 8px;
+                    padding-bottom: 15px;
+                    font-size: 14px;
+                    font-family: "Chronicle Text G1";
+                    letter-spacing: 1px;
+                }
+            }
+            .thumbnail {
+                height: 700px;
+            }
+            .home-img {
+                width: 1200px;
+                height: 700px;
+                margin-bottom: 80px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("../img/Home-1250x833.jpg");
+                background-position: center;
+                transition: background-image .2s ease-in-out;
+
+                .img-caption {
+                    position: relative;
+                    height: 700px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }
+                span {
+                    position: absolute;
+                    left: 1210px;
+                    writing-mode: vertical-lr;
+                }
+            }
+            .m-list {
+                width: 30%;
+                font-size: 26px;
+                text-align: right;
+
+                ul {
+                    margin-bottom: 25px;
+                    text-transform: uppercase;
+
+                    li {
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+
+                        &:first-child {
+                            margin-top: 5px;
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            margin-right: -1px;
+                            font-family: "Verlag", sans-serif;
+                        }
+                        &:not(:first-child) {
+                            letter-spacing: 7px;
+                            margin-right: -7px;
+                            font-family: "Chronicle Text G1", serif;
+                        }
+                        &.store {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+            h5 {
+                margin-top: 80px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #fff;
+                font-size: 11px;
+            }
+        }
+
+        .feature {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
+            background-color: #bdbebf;
+            padding: 60px 10px;
         }
-        .menu {
-          display: flex;
-
-          li {
-            width: 100%;
-          }
-          .accountIcon {
-            cursor: pointer;
-
-            a {
-              display: block;
-              background-image: url("/src/img/account.svg");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 14px 14px;
-              width: 40px;
-              height: 50px;
-            }
-          }
-          .searchIcon {
-            cursor: pointer;
-
-            a {
-              display: block;
-              background-image: url("/src/img/searchIcon.svg");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 14px 14px;
-              width: 40px;
-              height: 50px;
-            }
-          }
-          .menuIcon {
-            cursor: pointer;
-
-            a {
-              display: block;
-              background-image: url("/src/img/mMenu.svg");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 17px 17px;
-              width: 40px;
-              height: 50px;
-            }
-          }
-        }
-      }
-
-      .page {
-        margin: 0 80px;
-        .land {
-          display: flex;
-        }
-        .row {
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          justify-content: space-between;
-          gap: 80px;
-
-          .portrait {
-            width: calc(40% - 40px);
-
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-          .landscape {
-            width: calc(60% - 40px);
-
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-          .landscape-02 {
-            width: calc(50% - 22px);
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-          .portrait-02 {
-            width: calc(25% - 22px);
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-        }
-
-        .home-img {
-          width: 70%;
-          margin-bottom: 80px;
-        }
-        .m-list {
-          width: 30%;
-          font-size: 26px;
-          text-align: right;
-
-          ul {
-            margin-bottom: 25px;
-            text-transform: uppercase;
-
-            li {
-              margin-top: 5px;
-              margin-bottom: 15px;
-              
-              &:first-child {
-                margin-top: 5px;
-                font-size: 10px;
-                letter-spacing: 1px;
-                margin-right: -1px;
-                font-family: "Verlag", sans-serif;
-              }
-              &:not(:first-child) {
-                letter-spacing: 7px;
-                margin-right: -7px;
-                font-family: 'Chronicle Text G1', serif;
-              }
-              &.store {
-                margin-top: 40px;
-              }
-            }
-          }
-        }
-      }
     }
-  }
 }
 .blind {
-  visibility: hidden;
+    visibility: hidden;
+}
+
+.feature-block {
+    font-family: "Chronicle Text G1";
+    margin-top: 30%;
+    margin-right: -120px;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 4px;
+        margin-bottom: 1em;
+    }
+    p {
+        letter-spacing: 2px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    button {
+        padding: 12px 24px;
+        background-color: transparent;
+        border: 1px solid #000;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+.feature-product {
+    color: gray;
+    font-size: 8px;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+
+        h6 {
+            color: #fff;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+        p {
+            color: gray;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .p1 {
+            margin-top: 8px;
+            font-family: "Verlag";
+        }
+    }
+}
+footer {
+    background-color: #4d4d4d;
+    .info {
+        display: flex;
+        padding: 100px 80px;
+
+        .text {
+            color: gray;
+            flex: 1;
+            line-height: 1.6;
+            padding-right: 10%;
+
+            .company {
+                margin-top: 20px;
+                span {
+                    margin-right: 7px;
+                }
+                svg {
+                    width: 60px;
+                    max-height: 12px;
+                }
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            ul {
+                display: inline-block;
+                li {
+                    font-size: 12px;
+                    line-height: 2;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+
+                    &:first-child {
+                        cursor: default;
+                        color: gray;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                        font-family: "Verlag";
+                    }
+                    &:not(:first-child) {
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: #fff;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe {
+            flex: 1;
+            text-align: right;
+            font-size: 11px;
+            color: gray;
+
+            form {
+                h6 {
+                    text-transform: uppercase;
+                    font-family: "Verlag";
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
+                input {
+                    background-color: transparent;
+                    &[type="email"] {
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        width: 140px;
+                    }
+                    &[type="submit"] {
+                        cursor: pointer;
+                        position: relative;
+                        bottom: -14px;
+                        border: 1px solid gray;
+                        width: 30px;
+                        height: 30px;
+                        background-image: url("/src/img/arrowRight.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 12px 12px;
+                    }
+                }
+            }
+            .icon a {
+                display: inline-block;
+                width: 30px;
+                svg {
+                    fill: gray;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .fixed-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+        background-color: #ccc6bb;
+        .wrapper {
+            display: flex;
+            padding: 30px;
+            .content {
+                flex: 9;
+                text-align: center;
+                font-size: 13px;
+                span {
+                    padding-right: 30px;
+                }
+                input {
+                    background-color: transparent;
+                    border: none;
+                    &[type="email"] {
+                        border-bottom: 1px solid gray;
+                        width: 300px;
+                        padding: 10px;
+                        font-family: "Chronicle Text G1";
+                    }
+                    &[type="submit"] {
+                        cursor: pointer;
+                        margin-left: -40px;
+                        width: 30px;
+                        height: 30px;
+                        font-family: "Verlag";
+                    }
+                }
+            }
+            .close {
+                flex: 1;
+                margin-right: 40px;
+                button {
+                    color: gray;
+                    background-color: transparent;
+                    border: none;
+                    text-transform: uppercase;
+                    font-size: 9px;
+                    font-family: "Verlag";
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
