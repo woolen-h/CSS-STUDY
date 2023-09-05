@@ -163,18 +163,27 @@ html body.main .home-img {
   background-repeat: no-repeat;
   background-image: url("../img/Home-1250x833.jpg");
   background-position: center;
-  transition: background-image 0.2s ease-in-out;
+  transition: all 100ms linear;
+  color: #999;
+}
+html body.main .home-img:hover {
+  color: #464646;
+  -webkit-filter: brightness(90%);
 }
 html body.main .home-img .img-caption {
   position: relative;
   height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
-html body.main .home-img span {
+html body.main .home-img .img-caption span {
   position: absolute;
-  left: 1210px;
+  text-transform: uppercase;
+  font-family: "Verlag";
+  font-size: 9px;
+  left: 1215px;
+  letter-spacing: 1px;
   writing-mode: vertical-lr;
 }
 html body.main .m-list {
