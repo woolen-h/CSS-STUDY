@@ -172,20 +172,31 @@ html {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-image: url("../img/Home-1250x833.jpg");
-                background-position: center;
-                transition: background-image .2s ease-in-out;
+                background-position: center;    
+                transition: all 100ms linear;
+                color: #999;
+                        
+                &:hover {
+                    color: #464646;
+                    -webkit-filter: brightness(90%);
+                }
 
                 .img-caption {
                     position: relative;
                     height: 700px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: end;
-                }
-                span {
-                    position: absolute;
-                    left: 1210px;
-                    writing-mode: vertical-lr;
+                    justify-content: flex-end;
+
+                    span {
+                        position: absolute;
+                        text-transform: uppercase;
+                        font-family: 'Verlag';
+                        font-size: 9px;
+                        left: 1215px;
+                        letter-spacing: 1px;
+                        writing-mode: vertical-lr;
+                    }
                 }
             }
             .m-list {
